@@ -12,6 +12,7 @@ const pushJSON = (url, data) => {
 	const request = new XMLHttpRequest()
 	request.open('POST', url, true)
 	request.setRequestHeader('Content-Type', 'application/json; charset=UTF-8')
+	request.setRequestHeader('authorization', 'c9eee5bb-9c80-4812-b302-3a20dab56b5f')
 	request.send(JSON.stringify(data))
 }
 const cinp = () => {
