@@ -3,7 +3,7 @@ const ebox = document.getElementById('erbox')
 const fetchJSON = (a) => {
 	const f = new XMLHttpRequest()
 	f.open('GET', a, false)
-	f.setRequestHeader('authorization: token', 'c9eee5bb-9c80-4812-b302-3a20dab56b5f')
+	f.setRequestHeader('authorization', 'c9eee5bb-9c80-4812-b302-3a20dab56b5f')
 	f.onreadystatechange = oEvent => {
 		if (f.readyState === 4) {
 			if (f.status === 200) {} else {
