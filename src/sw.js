@@ -35,11 +35,11 @@ workbox.routing.registerRoute(
 	})
 );
 workbox.precaching.precacheAndRoute([
-    'src/index.css',
-    'src/index.js',
-    'src/manage.js',
+    '/index.css',
+    '/index.js',
+    '/manage.js',
 	{
-		url: 'src/index.html',
+		url: '/index.html',
 		revision: '383676'
 	},
 ]);
